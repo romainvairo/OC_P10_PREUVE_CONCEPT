@@ -9,6 +9,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 pio.templates.default = "plotly"
 import joblib
+import pickle
 
 
 # # --------------------------------------------------------------------------
@@ -324,33 +325,34 @@ if my_choice_8 == "TabPFN":
     df = pd.DataFrame(data)
     st.table(df)
     
-filename = 'tabpfn.sav'
+filename = 'lr.pkl'
 loaded_model = joblib.load(filename)
+
 
 
 # # --------------------------------------------------------------------------
 
 
-# def main():
+def main():
 
-#     Pregnancies = st.slider("met le nombre de fois ou tu es tombé enceinte", 0, 17, help="Sélectionnez le nombre de fois ou tu es tombé enceinte")
-#     Glucose = st.slider("De combien est ton taux de glucose", 0, 199)
-#     BloodPressure = st.slider("De combien est ta pression sanguine ?", 0, 130)
-#     SkinThickness = st.slider("Quelle est l'épaisseur de ta peau ?", 0, 100)
-#     Insulin = st.slider("De combien est ton taux d'insuline ?", 0, 200)
-#     BMI = st.slider("Quel est ton indice de masse corporel ?", 0, 60)
-#     DiabetesPedigreeFunction = st.slider("Combien de personnes sont diabetiques dans ta famille ?", 0, 3)
-#     Age = st.slider("Quel age as tu ?", 21, 100)
+    Pregnancies = st.slider("met le nombre de fois ou tu es tombé enceinte", 0, 17, help="Sélectionnez le nombre de fois ou tu es tombé enceinte")
+    Glucose = st.slider("De combien est ton taux de glucose", 0, 199)
+    BloodPressure = st.slider("De combien est ta pression sanguine ?", 0, 130)
+    SkinThickness = st.slider("Quelle est l'épaisseur de ta peau ?", 0, 100)
+    Insulin = st.slider("De combien est ton taux d'insuline ?", 0, 200)
+    BMI = st.slider("Quel est ton indice de masse corporel ?", 0, 60)
+    DiabetesPedigreeFunction = st.slider("Combien de personnes sont diabetiques dans ta famille ?", 0, 3)
+    Age = st.slider("Quel age as tu ?", 21, 100)
 
-#     inputs = [[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age]]
+    inputs = [[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age]]
 
-#     if st.button("predict"):
-#         result = loaded_model.predict(inputs)
-#         updated_res = result.flatten().astype(int)
-#         if updated_res == 0:
-#             st.write("Vous êtes peu susceptible d'être diabétique")
-#         if updated_res == 1:
-#             st.write("Vous êtes susceptible d'être diabétique")
+    if st.button("predict"):
+        result = loaded_model.predict(inputs)
+        updated_res = result.flatten().astype(int)
+        if updated_res == 0:
+            st.write("Vous êtes peu susceptible d'être diabétique")
+        if updated_res == 1:
+            st.write("Vous êtes susceptible d'être diabétique")
     
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
