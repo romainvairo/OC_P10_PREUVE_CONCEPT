@@ -247,20 +247,20 @@ if dark_font:
 # --------------------------------------------------------------------------
     
 
-# st.title("Application de prédiction du diabète")
-# st.write("Changez la couleur à l'aide du sélecteur de couleur et cliquez sur le bouton pour voir les modifications en direct.")
+st.title("Application de prédiction du diabète")
+st.write("Changez la couleur à l'aide du sélecteur de couleur et cliquez sur le bouton pour voir les modifications en direct.")
 
-# st.write(data.head())
-# st.write(data.describe())
+st.write(data.head())
+st.write(data.describe())
 
-# st.write("Graphique :")
-# fig, ax = plt.subplots()
-# choice = st.selectbox(
-#     'Vous pouvez choisir une colonne spécifique s:',
-#     ['Pregnancies', 'BloodPressure', 'SkinThickness', 'BMI', 'Glucose', 'Insulin', 'DiabetesPedigreeFunction'])
-# sns.histplot(data=data, x=choice, hue='Outcome', kde=True)
-# ax.set_title('Répartition des personnes diabétiques selon leurs {}'.format(choice))
-# st.pyplot(fig)
+st.write("Graphique :")
+fig, ax = plt.subplots()
+choice = st.selectbox(
+    'Vous pouvez choisir une colonne spécifique s:',
+    ['Pregnancies', 'BloodPressure', 'SkinThickness', 'BMI', 'Glucose', 'Insulin', 'DiabetesPedigreeFunction'])
+sns.histplot(data=data, x=choice, hue='Outcome', kde=True)
+ax.set_title('Répartition des personnes diabétiques selon leurs {}'.format(choice))
+st.pyplot(fig)
 
 # my_choice_7 = st.selectbox(
 #     'Vous pouvez choisir une colonne spécifique :',
