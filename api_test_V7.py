@@ -15,10 +15,10 @@ pio.templates.default = "plotly"
 # # --------------------------------------------------------------------------
 
 
-# data = pd.read_csv("diabetes.csv")
+data = pd.read_csv("diabetes.csv")
 
 
-# st.sidebar.header("Paramètres")
+st.sidebar.header("Paramètres")
 
 
 # # --------------------------------------------------------------------------
