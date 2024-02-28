@@ -262,27 +262,27 @@ sns.histplot(data=data, x=choice, hue='Outcome', kde=True)
 ax.set_title('Répartition des personnes diabétiques selon leurs {}'.format(choice))
 st.pyplot(fig)
 
-# my_choice_7 = st.selectbox(
-#     'Vous pouvez choisir une colonne spécifique :',
-#      [ "BMI", "Insulin", "BloodPressure", "Age", "Glucose", "Glucose", "Pregnancies", 'SkinThickness','DiabetesPedigreeFunction'])
+my_choice_7 = st.selectbox(
+    'Vous pouvez choisir une colonne spécifique :',
+     [ "BMI", "Insulin", "BloodPressure", "Age", "Glucose", "Glucose", "Pregnancies", 'SkinThickness','DiabetesPedigreeFunction'])
 
 
-# fig = px.histogram(data, x=my_choice_7, color="Outcome")
-# fig
+fig = px.histogram(data, x=my_choice_7, color="Outcome")
+fig
 
-# my_choice_5 = st.selectbox(
-#     'Vous pouvez choisir une col nne spécifique :',
-#      [ "BMI", "Insulin", "BloodPressure", "Age", "Glucose", "Glucose", "Pregnancies", 'SkinThickness','DiabetesPedigreeFunction'])
+my_choice_5 = st.selectbox(
+    'Vous pouvez choisir une col nne spécifique :',
+     [ "BMI", "Insulin", "BloodPressure", "Age", "Glucose", "Glucose", "Pregnancies", 'SkinThickness','DiabetesPedigreeFunction'])
 
-# my_choice_6 = st.selectbox(
-#     'Vous possuvez choisir une colonne spécifique :',
-#      ['DiabetesPedigreeFunction', 'SkinThickness', "Pregnancies", "Glucose", "Age", "BloodPressure", "Insulin", "BMI"])
+my_choice_6 = st.selectbox(
+    'Vous possuvez choisir une colonne spécifique :',
+     ['DiabetesPedigreeFunction', 'SkinThickness', "Pregnancies", "Glucose", "Age", "BloodPressure", "Insulin", "BMI"])
 
 
-# df = data.astype({"Outcome" : str})
-# fig = px.scatter(df, x=my_choice_5, y=my_choice_6, color="Outcome",
-#                  hover_data=[ "BMI", "Insulin", "BloodPressure", "Age", "Glucose", "Glucose", "Pregnancies", 'SkinThickness','DiabetesPedigreeFunction'])
-# fig
+df = data.astype({"Outcome" : str})
+fig = px.scatter(df, x=my_choice_5, y=my_choice_6, color="Outcome",
+                 hover_data=[ "BMI", "Insulin", "BloodPressure", "Age", "Glucose", "Glucose", "Pregnancies", 'SkinThickness','DiabetesPedigreeFunction'])
+fig
 
 # my_choice_8 = st.selectbox(
 #     'Vous possuvez cr une colonne spécifique :',
