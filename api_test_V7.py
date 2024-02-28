@@ -1,7 +1,5 @@
 # ------------------------- Imports Libraries ------------------------------
 
-
-import pickle
 import numpy as np
 import streamlit as st
 import pandas as pd
@@ -10,6 +8,7 @@ import plotly.express as px
 import seaborn as sns
 import matplotlib.pyplot as plt
 pio.templates.default = "plotly"
+import joblib
 
 
 # # --------------------------------------------------------------------------
@@ -325,8 +324,8 @@ if my_choice_8 == "TabPFN":
     df = pd.DataFrame(data)
     st.table(df)
     
-filename = 'tabpfn.pkl'
-loaded_model = pickle.load(open(filename, 'rb'))
+filename = 'tabpfn.sav'
+loaded_model = joblib.load(filename)
 
 
 # # --------------------------------------------------------------------------
