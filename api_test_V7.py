@@ -24,227 +24,227 @@ st.sidebar.header("Paramètres")
 # # --------------------------------------------------------------------------
 
 
-# custom_color_text = st.sidebar.color_picker("Choisir la couleur des textes", "#000000")
+custom_color_text = st.sidebar.color_picker("Choisir la couleur des textes", "#000000")
 
-# def apply_custom_color_text(custom_color_text):
-#     """
-#     Appliquer la couleur personnalisée à tous les textes.
-#     """
-#     custom_css = f"""
-#     <style>
-#         body, p, .st-emotion-cache-ue6h4q, .e1y5xkzn3{{
-#             color: {custom_color_text};
-#         }}
-#     </style>
-#     """
-#     st.markdown(custom_css, unsafe_allow_html=True)
+def apply_custom_color_text(custom_color_text):
+    """
+    Appliquer la couleur personnalisée à tous les textes.
+    """
+    custom_css = f"""
+    <style>
+        body, p, .st-emotion-cache-ue6h4q, .e1y5xkzn3{{
+            color: {custom_color_text};
+        }}
+    </style>
+    """
+    st.markdown(custom_css, unsafe_allow_html=True)
 
-# apply_custom_color_text(custom_color_text)
-
-
-# # --------------------------------------------------------------------------
+apply_custom_color_text(custom_color_text)
 
 
-# custom_color_background_select_button = st.sidebar.color_picker("Choisir une couleur pour les selectboxes", "#FFFFFF")
-
-# def apply_custom_color_background_select_button(custom_color_background_select_button):
-#     """
-#     Appliquer la couleur personnalisée à tous les textes.
-#     """
-#     custom_css = f"""
-#     <style>
-#         .st-an, .st-ao, .st-ap, .st-aq, .st-ak, .st-ar, .st-am, .st-as, .st-at, .st-au, .st-av, .st-aw, .st-ax, .st-ay, .st-az, .st-b0, .st-b1, .st-b2, .st-b3, .st-b4, .st-b5, .st-b6, .st-di, .st-dj, .st-dk, .st-dl, .st-bb{{
-#             background-color: {custom_color_background_select_button};
-#         }}
-#     </style>
-#     """
-#     st.markdown(custom_css, unsafe_allow_html=True)
+# --------------------------------------------------------------------------
 
 
-# apply_custom_color_background_select_button(custom_color_background_select_button)
+custom_color_background_select_button = st.sidebar.color_picker("Choisir une couleur pour les selectboxes", "#FFFFFF")
+
+def apply_custom_color_background_select_button(custom_color_background_select_button):
+    """
+    Appliquer la couleur personnalisée à tous les textes.
+    """
+    custom_css = f"""
+    <style>
+        .st-an, .st-ao, .st-ap, .st-aq, .st-ak, .st-ar, .st-am, .st-as, .st-at, .st-au, .st-av, .st-aw, .st-ax, .st-ay, .st-az, .st-b0, .st-b1, .st-b2, .st-b3, .st-b4, .st-b5, .st-b6, .st-di, .st-dj, .st-dk, .st-dl, .st-bb{{
+            background-color: {custom_color_background_select_button};
+        }}
+    </style>
+    """
+    st.markdown(custom_css, unsafe_allow_html=True)
 
 
-# # --------------------------------------------------------------------------
-
-# custom_color_background = st.sidebar.color_picker("Choisir une couleur d'arriere plan principal", "#EBF2F5")
-
-# def apply_custom_color_background(custom_color_background):
-#     """
-#     Appliquer la couleur personnalisée à tous les textes.
-#     """
-#     custom_css = f"""
-#     <style>
-#         section {{
-#             background-color: {custom_color_background};
-#         }}
-#     </style>
-#     """
-#     st.markdown(custom_css, unsafe_allow_html=True)
+apply_custom_color_background_select_button(custom_color_background_select_button)
 
 
-# apply_custom_color_background(custom_color_background)
+# --------------------------------------------------------------------------
+
+custom_color_background = st.sidebar.color_picker("Choisir une couleur d'arriere plan principal", "#EBF2F5")
+
+def apply_custom_color_background(custom_color_background):
+    """
+    Appliquer la couleur personnalisée à tous les textes.
+    """
+    custom_css = f"""
+    <style>
+        section {{
+            background-color: {custom_color_background};
+        }}
+    </style>
+    """
+    st.markdown(custom_css, unsafe_allow_html=True)
 
 
-# # --------------------------------------------------------------------------
-
-# custom_color_background = st.sidebar.color_picker("Choisir une couleur d'arriere plan du sidebar", "#D85656")
-
-# def apply_custom_color_background(custom_color_background):
-#     """
-#     Appliquer la couleur personnalisée à tous les textes.
-#     """
-#     custom_css = f"""
-#     <style>
-#         .st-emotion-cache-6qob1r, .eczjsme3 {{
-#             background-color: {custom_color_background};
-#         }}
-#     </style>
-#     """
-#     st.markdown(custom_css, unsafe_allow_html=True)
+apply_custom_color_background(custom_color_background)
 
 
-# apply_custom_color_background(custom_color_background)
+# --------------------------------------------------------------------------
+
+custom_color_background = st.sidebar.color_picker("Choisir une couleur d'arriere plan du sidebar", "#D85656")
+
+def apply_custom_color_background(custom_color_background):
+    """
+    Appliquer la couleur personnalisée à tous les textes.
+    """
+    custom_css = f"""
+    <style>
+        .st-emotion-cache-6qob1r, .eczjsme3 {{
+            background-color: {custom_color_background};
+        }}
+    </style>
+    """
+    st.markdown(custom_css, unsafe_allow_html=True)
 
 
-# # --------------------------------------------------------------------------
-
-# font_size = st.sidebar.slider("Choisir la taille de la police d'ecriture des textes", 2, 30, 16)
-
-# def apply_custom_font_size(font_size):
-#     """
-#     Appliquer la taille de police personnalisée.
-#     """
-#     custom_css = f"""
-#     <style>
-#         p, .row-widget, .stSelectbox {{
-#             font-size: {font_size}px;
-#         }}
-#     </style>
-#     """
-#     st.markdown(custom_css, unsafe_allow_html=True)
+apply_custom_color_background(custom_color_background)
 
 
-# apply_custom_font_size(font_size)
+# --------------------------------------------------------------------------
+
+font_size = st.sidebar.slider("Choisir la taille de la police d'ecriture des textes", 2, 30, 16)
+
+def apply_custom_font_size(font_size):
+    """
+    Appliquer la taille de police personnalisée.
+    """
+    custom_css = f"""
+    <style>
+        p, .row-widget, .stSelectbox {{
+            font-size: {font_size}px;
+        }}
+    </style>
+    """
+    st.markdown(custom_css, unsafe_allow_html=True)
 
 
-# # --------------------------------------------------------------------------
+apply_custom_font_size(font_size)
 
 
-# font_size_title = st.sidebar.slider("Choisir la taille de la police d'ecriture des titres", 10, 55, 40)
-
-# def apply_custom_font_size(font_size_title):
-#     """
-#     Appliquer la taille de police personnalisée.
-#     """
-#     custom_css = f"""
-#     <style>
-#         .st-emotion-cache-zt5igj, .e1nzilvr4 {{
-#             font-size: {font_size_title}px;
-#         }}
-#     </style>
-#     """
-#     st.markdown(custom_css, unsafe_allow_html=True)
+# --------------------------------------------------------------------------
 
 
-# apply_custom_font_size(font_size_title)
+font_size_title = st.sidebar.slider("Choisir la taille de la police d'ecriture des titres", 10, 55, 40)
+
+def apply_custom_font_size(font_size_title):
+    """
+    Appliquer la taille de police personnalisée.
+    """
+    custom_css = f"""
+    <style>
+        .st-emotion-cache-zt5igj, .e1nzilvr4 {{
+            font-size: {font_size_title}px;
+        }}
+    </style>
+    """
+    st.markdown(custom_css, unsafe_allow_html=True)
 
 
-# # --------------------------------------------------------------------------
-
-# daltonian_font = st.sidebar.checkbox("Daltonien")
-
-# def apply_custom_daltonian(daltonian_font):
-#     """
-#     Appliquer la taille de police personnalisée.
-#     """
-#     custom_css = f"""
-#     <style>
-
-#     .st-emotion-cache-zt5igj, .e1nzilvr4 {{
-#         font-size: 80px;
-#     }}
-
-#     .row-widget, .stSelectbox {{
-#         font-size: {50}px;
-#     }}
-
-#     .st-emotion-cache-6qob1r, .eczjsme3 {{
-#             background-color: {"#0866ff"};
-#     }}
-
-#     p, h2 {{
-#             background-color: {"#0866ff"};
-#             color : white;
-#     }}
-
-#      section {{
-#             background-color: {"#0866ff"};
-#             color : white;
-#         }}
-#     .st-emotion-cache-zt5igj, .e1nzilvr4 {{
-#             color : white;
-#         }}
-#     .st-aw, .st-ak, .st-ax, .st-al, .st-ay, .st-az, .st-b0, .st-b1, .st-b2" {{
-#             background-color: {"#0866ff"};
-#         }}
-
-#     </style>
-#     """
-#     st.markdown(custom_css, unsafe_allow_html=True)
-
-# if daltonian_font:
-#     apply_custom_daltonian(daltonian_font)
+apply_custom_font_size(font_size_title)
 
 
-# # --------------------------------------------------------------------------
+# --------------------------------------------------------------------------
+
+daltonian_font = st.sidebar.checkbox("Daltonien")
+
+def apply_custom_daltonian(daltonian_font):
+    """
+    Appliquer la taille de police personnalisée.
+    """
+    custom_css = f"""
+    <style>
+
+    .st-emotion-cache-zt5igj, .e1nzilvr4 {{
+        font-size: 80px;
+    }}
+
+    .row-widget, .stSelectbox {{
+        font-size: {50}px;
+    }}
+
+    .st-emotion-cache-6qob1r, .eczjsme3 {{
+            background-color: {"#0866ff"};
+    }}
+
+    p, h2 {{
+            background-color: {"#0866ff"};
+            color : white;
+    }}
+
+     section {{
+            background-color: {"#0866ff"};
+            color : white;
+        }}
+    .st-emotion-cache-zt5igj, .e1nzilvr4 {{
+            color : white;
+        }}
+    .st-aw, .st-ak, .st-ax, .st-al, .st-ay, .st-az, .st-b0, .st-b1, .st-b2" {{
+            background-color: {"#0866ff"};
+        }}
+
+    </style>
+    """
+    st.markdown(custom_css, unsafe_allow_html=True)
+
+if daltonian_font:
+    apply_custom_daltonian(daltonian_font)
+
+
+# --------------------------------------------------------------------------
     
 
-# dark_font = st.sidebar.checkbox("Dark")
+dark_font = st.sidebar.checkbox("Dark")
 
-# def apply_custom_dark_mode(dark_font):
-#     """
-#     Appliquer la taille de police personnalisée.
-#     """
-#     custom_css = f"""
-#     <style>
+def apply_custom_dark_mode(dark_font):
+    """
+    Appliquer la taille de police personnalisée.
+    """
+    custom_css = f"""
+    <style>
 
-#     .st-emotion-cache-zt5igj, .e1nzilvr4 {{
-#         font-size: 80px;
-#     }}
+    .st-emotion-cache-zt5igj, .e1nzilvr4 {{
+        font-size: 80px;
+    }}
 
-#     .row-widget, .stSelectbox {{
-#         font-size: {50}px;
-#     }}
+    .row-widget, .stSelectbox {{
+        font-size: {50}px;
+    }}
 
-#     .st-emotion-cache-6qob1r, .eczjsme3 {{
-#             background-color: {"#000000"};
-#     }}
+    .st-emotion-cache-6qob1r, .eczjsme3 {{
+            background-color: {"#000000"};
+    }}
 
-#     p, h2, .st-emotion-cache-jfj0d9, .e115fcil0 {{
-#             background-color: {"#000000"};
-#             color : white;
-#     }}
+    p, h2, .st-emotion-cache-jfj0d9, .e115fcil0 {{
+            background-color: {"#000000"};
+            color : white;
+    }}
 
-#      section {{
-#             background-color: {"#000000"};
-#             color : white;
-#         }}
-#     .st-emotion-cache-zt5igj, .e1nzilvr4 {{
-#             color : white;
-#         }}
-#     .st-aw, .st-ak, .st-ax, .st-al, .st-ay, .st-az, .st-b0, .st-b1, .st-b2" {{
-#             background-color: {"#000000"};
-#         }}
+     section {{
+            background-color: {"#000000"};
+            color : white;
+        }}
+    .st-emotion-cache-zt5igj, .e1nzilvr4 {{
+            color : white;
+        }}
+    .st-aw, .st-ak, .st-ax, .st-al, .st-ay, .st-az, .st-b0, .st-b1, .st-b2" {{
+            background-color: {"#000000"};
+        }}
 
-#     </style>
-#     """
-#     st.markdown(custom_css, unsafe_allow_html=True)
+    </style>
+    """
+    st.markdown(custom_css, unsafe_allow_html=True)
 
-# if dark_font:
-#     apply_custom_dark_mode(dark_font)
+if dark_font:
+    apply_custom_dark_mode(dark_font)
 
 
-# # --------------------------------------------------------------------------
+# --------------------------------------------------------------------------
     
 
 # st.title("Application de prédiction du diabète")
