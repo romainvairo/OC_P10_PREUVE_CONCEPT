@@ -325,8 +325,8 @@ if my_choice_8 == "TabPFN":
     df = pd.DataFrame(data)
     st.table(df)
     
-# filename = 'tabpfn.pkl'
-# loaded_model = pickle.load(open(filename, 'rb'))
+filename = 'tabpfn.pkl'
+loaded_model = pickle.load(open(filename, 'rb'))
 
 
 # # --------------------------------------------------------------------------
