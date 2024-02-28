@@ -284,46 +284,46 @@ fig = px.scatter(df, x=my_choice_5, y=my_choice_6, color="Outcome",
                  hover_data=[ "BMI", "Insulin", "BloodPressure", "Age", "Glucose", "Glucose", "Pregnancies", 'SkinThickness','DiabetesPedigreeFunction'])
 fig
 
-# my_choice_8 = st.selectbox(
-#     'Vous possuvez cr une colonne spécifique :',
-#      ['', 'Lightgbm', "RegressionLogistique", "TabPFN"])
+my_choice_8 = st.selectbox(
+    'Vous possuvez cr une colonne spécifique :',
+     ['', 'Lightgbm', "RegressionLogistique", "TabPFN"])
 
-# if my_choice_8 == '':
-#     st.write("")
+if my_choice_8 == '':
+    st.write("")
 
-# if my_choice_8 == "Lightgbm":
+if my_choice_8 == "Lightgbm":
 
-#     st.image("image_p10/lightgbm_auc_roc.png", caption = "image auc-roc 0.807 Lightgbm", width=500)
-#     st.image("image_p10/lightgbm_confusion_matrice.png", caption = "image confusion matrice Lightgbm", width=500)
-#     st.image("image_p10/lightgbm_lime.png", caption = "image LIME Lightgbm", width=1150)
-#     st.image("image_p10/lightgbm_shap.png", caption = "image SHAPE Lightgbm", width=700)
-#     data = {'Métrique': ['AUC ROC', 'Accuracy'],
-#             'Valeur': [0.807, 0.74]}
-#     df = pd.DataFrame(data)
-#     st.table(df)
+    st.image("image_p10/lightgbm_auc_roc.png", caption = "image auc-roc 0.807 Lightgbm", width=500)
+    st.image("image_p10/lightgbm_confusion_matrice.png", caption = "image confusion matrice Lightgbm", width=500)
+    st.image("image_p10/lightgbm_lime.png", caption = "image LIME Lightgbm", width=1150)
+    st.image("image_p10/lightgbm_shap.png", caption = "image SHAPE Lightgbm", width=700)
+    data = {'Métrique': ['AUC ROC', 'Accuracy'],
+            'Valeur': [0.807, 0.74]}
+    df = pd.DataFrame(data)
+    st.table(df)
 
-# if my_choice_8 == "RegressionLogistique":
+if my_choice_8 == "RegressionLogistique":
 
-#     st.image("image_p10/regression_logistique_auc_roc.png", caption = "image auc-roc 0.830 Regression Logistique", width=500)
-#     st.image("image_p10/regression_logistique_confusion_matrice.png", caption = "image confusion matrice Logistique", width=500)
-#     st.image("image_p10/regression_logistique_lime.png", caption = "image LIME Logistique", width=1150)
-#     st.image("image_p10/regression_logistique_shap.png", caption = "image SHAPE Logistique", width=700)
-#     data = {'Métrique': ['AUC ROC', 'Accuracy'],
-#             'Valeur': [0.830, 0.77]}
-#     df = pd.DataFrame(data)
-#     st.table(df)
+    st.image("image_p10/regression_logistique_auc_roc.png", caption = "image auc-roc 0.830 Regression Logistique", width=500)
+    st.image("image_p10/regression_logistique_confusion_matrice.png", caption = "image confusion matrice Logistique", width=500)
+    st.image("image_p10/regression_logistique_lime.png", caption = "image LIME Logistique", width=1150)
+    st.image("image_p10/regression_logistique_shap.png", caption = "image SHAPE Logistique", width=700)
+    data = {'Métrique': ['AUC ROC', 'Accuracy'],
+            'Valeur': [0.830, 0.77]}
+    df = pd.DataFrame(data)
+    st.table(df)
 
 
-# if my_choice_8 == "TabPFN":
+if my_choice_8 == "TabPFN":
 
-#     st.image("image_p10/tabpfn_auc_roc.png", caption = "image auc-roc 0.843 TabPFN", width=500)
-#     st.image("image_p10/tabpfn_confusion_matrice.png", caption = "image confusion matrice TabPFN", width=500)
-#     st.image("image_p10/tabpfn_lime.png", caption = "image LIME TabPFN", width=1150)
-#     st.image("image_p10/tabpfn_shap.png", caption = "image SHAPE TabPFN", width=700)
-#     data = {'Métrique': ['AUC ROC', 'Accuracy'],
-#             'Valeur': [0.843, 0.79]}
-#     df = pd.DataFrame(data)
-#     st.table(df)
+    st.image("image_p10/tabpfn_auc_roc.png", caption = "image auc-roc 0.843 TabPFN", width=500)
+    st.image("image_p10/tabpfn_confusion_matrice.png", caption = "image confusion matrice TabPFN", width=500)
+    st.image("image_p10/tabpfn_lime.png", caption = "image LIME TabPFN", width=1150)
+    st.image("image_p10/tabpfn_shap.png", caption = "image SHAPE TabPFN", width=700)
+    data = {'Métrique': ['AUC ROC', 'Accuracy'],
+            'Valeur': [0.843, 0.79]}
+    df = pd.DataFrame(data)
+    st.table(df)
     
 # filename = 'tabpfn.pkl'
 # loaded_model = pickle.load(open(filename, 'rb'))
