@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 pio.templates.default = "plotly"
 import joblib
 import pickle
+import sklearn
+
 
 
 # # --------------------------------------------------------------------------
