@@ -12,7 +12,7 @@ import joblib
 import pickle
 import sklearn
 from sklearn.preprocessing import StandardScaler
-
+from tabpfn import TabPFNClassifier
 
 
 # # --------------------------------------------------------------------------
